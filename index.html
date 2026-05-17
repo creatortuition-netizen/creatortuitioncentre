@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Creator Tuition Centre</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+header p{
+    margin-top:15px;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:white;
+    color:#0d47a1;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:yellow;
+    color:black;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* SECTION */
+
+section{
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+/* ABOUT */
+
+.about-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-text p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* COURSES */
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.course-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.course-box:hover{
+    transform:translateY(-10px);
+}
+
+.course-box h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+/* FACULTY */
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.faculty-box:hover{
+    transform:translateY(-10px);
+}
+
+
+
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.feature-box{
+    background:#1565c0;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+/* TIMING */
+
+table{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th,table td{
+    border:1px solid #ccc;
+    padding:15px;
+    text-align:center;
+}
+
+table th{
+    background:#1565c0;
+    color:white;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.contact-box button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.contact-box button:hover{
+    background:#0d47a1;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.about-container{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:35px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<h1>Creator Tuition Centre</h1>
+
+<p>Learn Smart • Score High • Build Future</p>
+
+<a href="#contact" class="btn">Admission</a>
+
+</header>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#Our Faculty">Our Faculty</a>
+
+<a href="#features">Features</a>
+
+<a href="#timing">Timings</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+
+
+</nav>
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<h2 class="section-title">About Our Tuition Centre</h2>
+
+<div class="about-container">
+
+<div class="about-text">
+
+
+    <p>
+        Welcome to <b>Creator Tuition Centre</b>. 
+        We have been successfully running for more than 
+        <b>4 years</b> with the aim of helping students 
+        achieve academic success.
+    </p><br>
+
+    <p>
+        Our tuition centre provides quality education with 
+        experienced teachers, friendly teaching methods, 
+        regular tests, study materials, and online classes. 
+        We focus on improving every student's knowledge, 
+        confidence, and academic performance.
+    </p>
+
+
+<br><b>
+
+✅ Online & Offline Classes <br> 
+✅ Daily Homework Support  <br>
+✅ Weekly Tests & Progress Reports  <br>
+✅ Individual Student Care  <br>
+✅ Communication Skills & Computer Classes  
+
+<br></b>
+
+</div>
+
+<div class="about-image">
+
+<img src="C:\Users\acer\Downloads\application\img 1.jpeg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- COURSES -->
+
+<section id="courses">
+<center>
+
+<h2 class="section-title">Courses Available</h2>
+
+<div class="course-container">
+
+<div class="course-box">
+   
+<h3>KG to 12th</h3>
+
+<p>
+All Subjects
+</p>
+
+</div>
+
+<div class="course-box">
+
+<h3>One / One</h3>
+
+<p>
+<select onchange="showCourses(this.value)">
+        <option value="">Select</option>
+        <option value="Mathamatics">Mathamatics</option>
+        <option value="Physics">Physics</option>
+        <option value="Biology">Biology</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Accounts">Accounts</option>
+
+    </select>
+
+</p>
+
+</div>
+</center>
+
+</section>
+<!-- FACULTY SECTION -->
+
+<section id="Our Faculty">
+
+<h2 class="section-title">Our Faculty</h2>
+
+<div class="course-container">
+
+<div class="course-box">
+
+<h3>Mrs.H.Fathima Banu</h3>
+<center>
+<b>CO-FOUNDER</b><br>
+<b>B.Com <br>
+Retired Tahsildar</b>
+</center>
+
+
+</div>
+
+<div class="course-box">
+
+<h3>Mr.K.Mohamed Navajis Hussain</h3>
+
+<p>
+<center>
+<b>FOUNDER<br></b>
+</center>
+“Education is not just teaching lessons, it is building futures.” ✨
+Creator Tuition Centre
+</p>
+</div>
+
+
+<div class="course-box">
+
+<h3>Mrs.R.Dhanveer Jahan</h3>
+<center>
+<b>B.Tech IT</b>
+
+
+
+<p>Physics faculty<br>
+Hindi Trainer
+</p></center>
+</div>
+
+<div class="course-box">
+
+<h3>Mrs.M.Shameem Sahidha Banu</h3>
+<center>
+<b>MSc., B.Ed.,</b>
+
+
+<p>Mathematics faculty
+</p></center>
+
+</div>
+
+
+
+
+<div class="course-box">
+
+<h3>Mrs. M.Nithya Priya</h3>
+<center>
+<b>M.Sc.,B.Ed., Maths</b>
+
+
+<p>
+Mathematics Faculty<br>
+5+ Years Experience
+</p></center>
+
+</div>
+
+
+<div class="course-box">
+
+<h3>Mr. M.Kanmani Dhasan</h3>
+<center>
+<b>B.E.,Mechanical Engineering</b>
+
+
+
+<p>
+Mathematics Faculty<br>
+5+ Years Experience
+</p></center>
+
+
+</div>
+
+<div class="course-box">
+
+<h3>Ms.K.Syed Raviya Ammal</h3>
+<center>
+<b>M.Sc., Chemistry</b>
+
+
+
+<p>
+Science Faculty<br>
+Chemistry Expert
+
+</p></center>
+
+
+</div>
+
+<div class="course-box">
+
+<h3>Ms.R.B.Swetha Jeyani</h3>
+<center>
+<b>M.Sc., Chemistry</b>
+
+
+
+<p>
+Science Faculty<br>
+Chemistry Expert
+</p></center>
+
+</div>
+<div class="course-box">
+
+<h3>Ms.S.Swetha</h3>
+<center>
+<b>M.Sc., Microbiology</b>
+
+
+
+
+<p>
+Science Faculty<br>
+Biology Expert
+</p></center>
+
+</div>
+
+<div class="course-box">
+
+<h3>Ms.S.Asha</h3>
+<center>
+<b>B.Sc Computer Science</b>
+
+
+
+
+<p>
+Computer Science Faculty<br>
+Python & Web Development
+</p></center>
+
+</div>
+
+<div class="course-box">
+
+<h3>Ms.S.Asiba Begam</h3>
+<center>
+<b>B.Sc Computer Science</b>
+
+
+
+<p>
+Computer Science Faculty<br>
+Python & Web Development
+</p></center>
+
+</div>
+
+<div class="course-box">
+
+<h3>Ms.H.Serin</h3>
+<center>
+<b>B.A. English</b>
+
+
+
+<p>
+
+</p>English Faculty<br>
+Communication Skill Trainer<p></center>
+
+</div>
+
+<div class="course-box">
+
+<h3>Mrs.S.Jumma Banu</h3>
+<center>
+
+<p> <b>Well-Trained kids staff </b><br>
+10+ years experience
+</p></center>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<h2 class="section-title">Why Students Choose Us</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Experienced Teachers</h3>
+<p>Friendly and easy teaching style.👨‍🏫
+</p>
+</div>
+
+
+<div class="feature-box">
+<h3>Weekly,Monthly & Unit Tests</h3>
+<p>Regular practice improves marks.📝</p>
+</div>
+
+<div class="feature-box">
+<h3>Online Classes</h3>
+<p>Google Meet & Recorded Sessions.💻</p>
+</div>
+
+<div class="feature-box">
+<h3>Study Materials</h3>
+<p>PDF notes and worksheets available.📘</p>
+</div>
+
+<div class="feature-box">
+<h3>Library Facility</h3>
+<p>Library is the heart of learning where knowledge grows silently.📚
+</p>
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- TIMING -->
+
+<section id="timing">
+
+<h2 class="section-title">Class Timings</h2>
+
+<table>
+
+<tr>
+<th>Standard</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>All Students</td>
+<td>6:00 PM - 8:30 PM</td>
+</tr>
+
+<tr>
+<td>10th - 12th</td>
+<td>6:30 PM - 9:00 PM</td>
+</tr>
+
+<tr>
+<td>10th - 12th</td>
+<td>7:00 PM - 9:30 PM</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Classroom Gallery</h2>
+
+<div class="gallery">
+
+<img src="C:\Users\acer\Downloads\application\img 2.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 3.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 4.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 5.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 6.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 7.jpeg">
+
+
+<img src="C:\Users\acer\Downloads\application\img 8.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 9.jpeg">
+
+<img src="C:\Users\acer\Downloads\application\img 10.jpeg">
+
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Admission Contact</h2>
+
+<div class="contact-box">
+
+<a href="https://forms.gle/CkmNoqAwHAXmyj7s8">
+
+<center>
+
+<button type="button">Apply Online</button>
+
+</center>
+
+</a>
+
+</div>
+
+
+
+<h3 id="msg"></h3>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Creator Tuition Centre</h3>
+
+<p>📞 +91 6381889868</p>
+
+<p>📞 +91 6383631776</p>
+
+<p>📧 creatortuition@gmail.com</p>
+
+<p>📍 Ramanathapuram, Tamil Nadu</p>
+
+<p style="margin-top:15px;">
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
